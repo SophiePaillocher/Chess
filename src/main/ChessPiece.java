@@ -1,3 +1,5 @@
+package main;
+
 public interface ChessPiece {
 
 
@@ -16,4 +18,6 @@ public interface ChessPiece {
     indique si la pièce est menacée par une pièce de l'adversaire
      */
     boolean isThreatened();
+
+
 }

@@ -1,3 +1,5 @@
+package main;
+
 /*
 Les cases del'échiquier
  */
@@ -22,5 +24,17 @@ public class Square {
     occupation de la case : nom de la pièce si occupée, empty sinon
      */
     ChessPiece occupation;
+
+    /*
+    Constructeur : crée une case en fonction de ses coordonnées
+     */
+    public Square(char file, int rank){
+        this.rank = rank;
+        this.file = file;
+    }
+
+    public boolean isOnTheBoard(){
+        return (rank > 0 & 9 > rank & file >= 'a' & file<='h');
+    }
 
 }

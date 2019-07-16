@@ -1,9 +1,11 @@
-public class Rook implements ChessPiece{
+package main;
+
+public class Queen implements ChessPiece {
     int color;
     char file;
     int rank;
 
-    public Rook(int color, char file, int rank)
+    public Queen(int color, char file, int rank)
     {
         this.color = color;
         this.file = file;
