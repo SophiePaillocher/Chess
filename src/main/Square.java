@@ -33,6 +33,14 @@ public class Square {
         this.file = file;
     }
 
+    public int getRank(){
+        return rank;
+    }
+
+    public char getFile(){
+        return file;
+    }
+
     public boolean isOnTheBoard(){
         return (rank > 0 & 9 > rank & file >= 'a' & file<='h');
     }
