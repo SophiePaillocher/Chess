@@ -1,9 +1,9 @@
 package main;
 
 public class Bishop implements ChessPiece {
-    int color;
-    char file;
-    int rank;
+    private int color;
+    private char file;
+    private int rank;
 
     public Bishop(int color, char file, int rank)
     {
@@ -25,5 +25,28 @@ public class Bishop implements ChessPiece {
     @Override
     public boolean isThreatened() {
         return false;
+    }
+
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
+    }
+
+    public char getFile() {
+        return file;
+    }
+
+    public void setFile(char file) {
+        this.file = file;
+    }
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    public int getRank() {
+        return rank;
     }
 }
