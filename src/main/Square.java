@@ -23,7 +23,7 @@ public class Square {
     /*
     occupation de la case : nom de la pièce si occupée, empty sinon
      */
-    ChessPiece occupation;
+    private ChessPiece occupation;
 
     /*
     Constructeur : crée une case en fonction de ses coordonnées
@@ -39,6 +39,23 @@ public class Square {
 
     public char getFile(){
         return file;
+    }
+
+
+    public void setColor(int color) {
+        this.color = color;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    public void setFile(char file) {
+        this.file = file;
+    }
+
+    public void setOccupation(ChessPiece occupation) {
+        this.occupation = occupation;
     }
 
     public boolean isOnTheBoard(){

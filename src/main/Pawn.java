@@ -5,11 +5,9 @@ public class Pawn implements ChessPiece {
     char file;
     int rank;
 
-    public Pawn(int color, char file, int rank)
+    public Pawn(int color)
     {
         this.color = color;
-        this.file = file;
-        this.rank = rank;
     }
     public int getColor() {
         return color;
@@ -17,21 +15,6 @@ public class Pawn implements ChessPiece {
 
     public void setColor(int color) {
         this.color = color;
-    }
-
-    public char getFile() {
-        return file;
-    }
-
-    public void setFile(char file) {
-        this.file = file;
-    }
-    public void setRank(int rank) {
-        this.rank = rank;
-    }
-
-    public int getRank() {
-        return rank;
     }
 
     @Override
